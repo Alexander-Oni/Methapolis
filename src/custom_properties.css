@@ -1,0 +1,31 @@
+:root{
+    font-size: 62.5%;
+
+    --font-family: "Work Sans", sans-serif;
+
+    --text-color: #2a2a2a;
+    --second-text-color: #ffffff;
+    --button-color: #6a19f5;
+    --donate-button-color: #f9523b;
+    --volunteer-button-color: #f6c55a;
+
+    --font-size-header-text: 1.6rem;
+    --font-size-title: clamp(3.5rem, 2.0194rem + 6.3172vw, 9.6rem);
+    --font-size-title-text: clamp(3rem, 2.466rem + 2.2783vw, 5.2rem);
+    --font-size-text: clamp(1.4rem, 1.2544rem + 0.6214vw, 2rem);
+    --font-size-footer-text: clamp(1.6rem, 1.5029rem + 0.4142vw, 2rem);
+    --font-size-button-text: 1.8rem;
+
+
+    --normal-font-weight: 400;
+    --medium-font-weight: 500;
+    --semi-bold-font-weight: 600;
+  
+    --header-bg-color: #ffffff;
+    --main-bg-color: #ffffff;
+    --footer-bg-color: #fff2d6;
+
+    --layuot-padding: 15px;
+}
+
+

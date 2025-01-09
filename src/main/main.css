@@ -1,0 +1,294 @@
+/*common*/
+section{
+    padding-block-end: 100px;
+}
+
+.main{
+    background-color: var(--main-bg-color);
+}
+
+.title{
+    font-size: var(--font-size-title-text);
+    font-weight: var(--semi-bold-font-weight);
+    padding-block-end: 20px;
+    letter-spacing: 5%;
+}
+
+.description{
+    text-align: left;
+    font-size: var(--font-size-text);
+    padding-block-end: 50px;
+}
+
+.volunteers, .slider, .content{
+    padding-inline: var(--layout-padding);
+}
+
+.images {
+    inline-size: max(375px, 50%);
+    padding-block-end: 50px;
+}
+
+*::selection{
+    background-color: var(--volunteer-button-color);
+    color: var(--button-color);
+}
+
+a{
+
+}
+
+@media (width >= 1440px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        text-align: left;
+        gap: 20px;
+        max-inline-size: 1440px;
+        margin-inline: auto;
+    }
+
+    .volunteers, .slider, .content{
+        padding-inline: 0;
+    }
+
+    .title{
+        padding-block-end: 40px;
+    }
+
+    .description{
+        padding-block-end: 60px;
+    }
+
+    .images{
+        inline-size: 100%;
+        padding: 0;
+    }
+
+    .content{
+        grid-column: 4 / -1;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    .host{
+        padding-block-end: 170px;
+    }
+
+    .button{
+        inline-size: 50%;
+    }
+
+}
+/*end common*/
+
+/*volunteers__testimonials section*/
+.volunteers__title{
+    font-size: var(--font-size-title);
+    font-weight: var(--normal-font-weight);
+    padding-block-start: 75px;
+    padding-block-end: 30px;
+    letter-spacing: 5%;
+}
+
+.volunteers__subtitle{
+    line-height: 1.3;
+    text-align: left;
+    font-weight: var(--semi-bold-font-weight);
+    font-size: clamp(2.86rem, 2.7775rem + 0.3521vw, 3.2rem);
+    padding-block-end: 20px;
+    letter-spacing: 0;
+}
+
+.volunteers__testimonials{
+    display: grid;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.big__background{
+    background-image: url(../../assets/figma/photo/volunteers_tetimonials_background_mob.svg);
+    min-inline-size: 375px;
+    inline-size: 100%;
+    block-size: 100%;
+    justify-self: center;
+    position: absolute;
+    background-position: center;
+    object-fit: cover;
+    z-index: -1;
+}
+.volunteers_content{
+    padding-block-end: 185px;
+}
+.testimonials__title{
+    font-size: clamp(3rem, 2.466rem + 2.2783vw, 5.2rem);
+    line-height: 1.3;
+    padding-block-end: 50px;
+    letter-spacing: 5%;
+}
+.testimonials__text{
+    font-size: clamp(1.6rem, 1.4058rem + 0.8285vw, 2.4rem);
+    line-height: 1.3;
+}
+.authors{
+    text-align: center;
+    font-size: var(--font-size-text);
+    letter-spacing: 0;
+    padding-block-start: 30px;
+    padding-block-end: 30px;
+}
+.author__decription
+{
+    opacity: 0.7;
+}
+
+.slider-button{
+    display: none;
+}
+
+.btn-left{
+    align-self: center;
+    inline-size: 40px;
+    block-size: 40px;
+    background-image: url(../../assets/figma/photo/slider_btn.svg);
+}
+
+.btn-right{
+    align-self: center;
+    inline-size: 40px;
+    block-size: 40px;
+    transform: rotate(180deg);
+    background-image: url(../../assets/figma/photo/slider_btn.svg);
+}
+
+.circle-btn__left, .circle-btn__mid, .circle-btn__right{
+    inline-size: 10px;
+    block-size: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--text-color);
+}
+
+.circle-buttons .active{
+    background-color: var(--text-color);
+}
+
+@media (width >= 1440px){
+    .volunteers__testimonials{
+        padding-block-start: 50px;
+    }
+
+    .big__background{
+        background-image: url(../../assets/figma/photo/volunteers_tetimonials_background.svg);
+    }
+
+    .volunteers__title{
+        font-weight: var(--medium-font-weight);
+    }
+
+    .testimonials__text{
+        line-height: 1.5;
+    }
+
+    .authors{
+        text-align: center;
+        font-size: var(--font-size-text);
+        letter-spacing: 0;
+        padding-block-start: 30px;
+        padding-block-end: 30px;
+    }
+
+    .slider-button{
+        display: block;
+    }
+
+    .slider{
+        display: grid;
+        grid-template-columns: min-content 1fr min-content;
+        margin: 0 auto;
+        gap: 285px;
+        max-inline-size: 1440px;
+    }
+
+    .volunteers_content{
+        padding-block-end: 235px;
+    }
+
+    .volunteers{
+        grid-column: 1 / 4;
+    }
+
+    .volunteers__image{
+        grid-column: 4 / -1;
+    }
+}
+
+/*end volunteers__testimonials section*/
+
+/*lead an activity*/
+.lead-an-act__image{
+    padding-block-end: 50px;
+}
+
+@media (width >= 1440px){
+    .lead-an-act, .lead-an-act__image{
+        grid-column: 1 / 4;
+        inline-size: 100%;
+    }
+}
+/*end lead an activity*/
+
+/*classroom*/
+.classroom{
+    color: var(--second-text-color);
+    padding-block-start: 100px;
+    margin-block-end: 100px;
+    position: relative;
+    z-index: 1;
+}
+.classroom__background{
+    background-image: url(../../assets/figma/photo/classroom_background.svg);
+    position: absolute;
+    justify-self: center;
+    top: 0;
+    z-index: -1;
+    min-inline-size: 375px;
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+.btn-volunteer{
+    display: none
+}
+
+@media (width >= 1440px) {
+
+    .btn-volunteer{
+        display: block;
+        background-color: var(--volunteer-button-color);
+        color: var(--text-color);
+    }
+
+    .classroom .content{
+        grid-column: 1 / 3;
+    }
+
+    .classroom .classroom__image{
+        grid-column: 3 / -1;
+        inline-size: 100%;
+    }
+}
+/*end classroom*/
+
+/*host a festival*/
+.classroom-visit__image{
+    padding-block-end: 50px;
+}
+
+@media (width >= 1440px) {
+    .host .host__image{
+        grid-column: 1/ 4;
+        inline-size: 100%;
+    }
+}
+/*end host a festival*/

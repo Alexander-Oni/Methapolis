@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/fonts/fonts.css">
+    <link rel="stylesheet" href="src/normalize.css">
+    <link rel="stylesheet" href="src/custom_properties.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/header/header.css">
+    <link rel="stylesheet" href="src/main/main.css">
+    <link rel="stylesheet" href="src/footer/footer.css">
+    <link rel="stylesheet" href="src/main/form.css">
+    <title>Methapolis</title>
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <a href="./index.html" class="header__logo">
+            <img src="assets/figma/photo/logo_header_mobile.svg" alt="Methapolis logo" class="logo__mobile">
+            <!--depend on media-->
+            <img src="assets/figma/photo/logo_header_desktop.svg" alt="Methapolis logo" class="logo__desktop">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="./grid.html" class="header__menu-link">PUZZLES</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="./form.html" class="header__menu-link">FORM</a>
+                    <button class="header-list-btn"></button>
+                </li>
+                <li class="header__menu-item">
+                    <a href="./demo.html" class="header__menu-link">DEMO</a>
+                    <button class="header-list-btn"></button>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">ABOUT</a>
+                    <button class="header-list-btn"></button>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">STORE</a>
+                </li>
+            </ul>
+        </nav>
+        <button name="donate" class="button btn__donate">DONATE</button>
+        <button type="button" class="mobile__nav__btn"></button> 
+    </header>
+    <!--main-->
+    <main>
+        <form method="post" class="form" action="//httpbin.org/post">
+            <p class="volunteers__subtitle"><span class="req">*</span> Reaquired to fill</p>
+            <div class="reg__form">
+                <fieldset class="user__info">
+                    <legend>ABOUT YOU</legend>
+                    <div class="element__of__form">
+                        <h2 class="fieldset__title">Name</h2>
+                        <label class="user__label">
+                            <span class="user__label__text hidden">Name</span>
+                            <input
+                                type="text" placeholder="John"
+                                name="name" class="user__textfield"
+                                inputmode="text" pattern="[a-zA-Z]{3,}"
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div class="element__of__form">
+                        <h2 class="fieldset__title">Surname</h2>
+                        <label class="user__label">
+                            <span class="user__label__text hidden">Surname</span>
+                            <input
+                                type="text" placeholder="Winchester"
+                                name="surname" class="user__textfield"
+                                inputmode="text" pattern="[a-zA-Z]{3,}"
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div class="element__of__form">
+                        <h2 class="fieldset__title">Birthday</h2>
+                        <label class="user__label">
+                            <span class="user__label__text hidden">Birthday</span>
+                            <input
+                                type="date" name="birthday" 
+                                class="user__textfield"
+                                inputmode="numeric" 
+                            />
+                        </label>
+                    </div>
+                    <div class="element__of__form">
+                        <h2 class="fieldset__title">Gender</h2>
+                        <div class="user__raduo__list">
+                            <label class="user__label">
+                                <input
+                                  type="radio"
+                                  name="gender"
+                                  value="male"
+                                  class="user__radio hidden"
+                                  required
+                                />
+                                <span class="user__pseudo-radio"></span>
+                                <span class="user__label__text">Male</span>
+                            </label>
+                            <label class="user__label">
+                                <input
+                                  type="radio"
+                                  name="gender"
+                                  value="female"
+                                  class="user__radio hidden"
+                                  required
+                                />
+                                <span class="user__pseudo-radio"></span>
+                                <span class="user__label__text">Female</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="user__info">
+                    <legend>CONTACTS</legend>
+                    <div class="element__of__form">
+                        <h2 class="fieldset__title">Phone number</h2>
+                        <label class="user__label">
+                            <span class="user__label__text hidden">Phone number</span>
+                            <input
+                            type="tel"
+                            name="tel"
+                            class="user__textfield"
+                            placeholder="+79998887654"
+                            inputmode="tel"
+                            pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                            required
+                            />
+                        </label>
+                    </div>
+                    <div class="element__of__form">
+                        <h2 class="fieldset__title">Email</h2>
+                        <label class="user__label">
+                            <span class="user__label__text hidden">Email</span>
+                            <input
+                                type="email"
+                                name="email"
+                                class="user__textfield"
+                                placeholder="john_win@gmail.com"
+                                inputmode="email"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                required
+                                />
+                        </label>
+                    </div>
+                    <div class="element__of__form">
+                        <h2 class="fieldset__title">Convenient time for communication</h2>
+                        <label class="user__label">
+                            <span class="user__label__text hidden">Communication</span>
+                            <select class="user__textfield">
+                                <option selected disabled hidden>
+                                Please, choose time of day
+                                </option>
+                                <option value="morning">Morning</option>
+                                <option value="aftrtnoon">Afternon</option>
+                                <option value="evening">Evening</option>
+                                <option value="night">Night</option>
+                            </select>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset class="profile">
+                <legend>PROFILE</legend>
+                <div class="element__of__form">
+                    <h2 class="fieldset__title">Username</h2>
+                    <label class="user__label">
+                        <span class="user__label__text hidden">Username</span>
+                        <input
+                            type="text"
+                            placeholder="example: pipurik_pupka"
+                            name="username"
+                            class="user__textfield"
+                            inputmode="text"
+                            pattern="^[a-z0-9_]+$"
+                            required
+                        />
+                    </label>
+                </div>
+                <div class="element__of__form">
+                    <h2 class="fieldset__title">Password</h2>
+                    <label class="user__label">
+                        <span class="user__label__text hidden">Password</span>
+                        <input
+                            type="password"
+                            name="password"
+                            class="user__textfield"
+                            inputmode="text"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+                            required
+                        />
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="form__buttons">
+                <button class="button" type="reset">RESET</button>
+                <button class="button" type="submit">SIGN UP</button>
+            </fieldset>
+        </form>
+        <form method="post" class="form" action="//httpbin.org/post">
+            <fieldset>
+                <dl>
+                    <dt class="description reset-offset">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+                    aliquid sunt nam commodi impedit similique illum incidunt, labore
+                    blanditiis quasi quos eos eius animi facere voluptatibus cum id quia
+                    amet.
+                    </dt>
+                    <dd class="sub__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                    illo, nobis, aspernatur dignissimos ea animi ducimus eligendi
+                    excepturi porro consectetur cumque dicta dolore earum eveniet
+                    voluptatum, accusamus quos voluptates assumenda?
+                    </dd>
+                    <dt class="description reset-offset">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+                    vitae laboriosam quidem nostrum possimus est nemo dignissimos
+                    eligendi quas optio odio officiis iusto. Amet ratione perspiciatis
+                    sunt culpa facere et?
+                    </dt>
+                    <dd class="sub__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                    fugiat ipsa repellat dicta quaerat doloribus iste magnam numquam
+                    blanditiis maxime odio assumenda nulla, nisi ut delectus aut,
+                    tenetur eum atque.
+                    </dd>
+                </dl>
+            </fieldset>
+        </form>
+    </main>
+    <!--footer-->
+    <footer class="footer footer__form"> 
+        <div class="footer__background" aria-disabled="true"></div>
+        <div class="footer__grid">
+            <div class="footer__decription">
+                <a href="index.html" class="img__logo">
+                    <img class="footer__image footer__form__image" src="assets/figma/photo/logo_footer.svg" alt="footer logo">
+                </a>
+                <p class="footer__text">
+                    We're a fiscally-sponsored project of a 501(c)3,
+                    Social and Environmental Entrepreneurs.
+                </p>
+            </div>
+            <div class="footer__links">
+                <ul class="footer__links-nav">
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">STUDENTS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">PARENTS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">TEACHERS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">VOLUNTEERS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="./demo.html" class="footer__link">DEMO</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="./grid.html" class="footer__link">PUZZLES</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">ABOUT</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">NEWS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="./form.html" class="footer__link">FORM</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">DONATE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <p class="footer__social__decription">
+                    Follow us:
+                </p>
+                <ul class="footer__social__list">
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/linkedin.svg"  alt="linkedin">                                              
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/youtube.svg" alt="toytube">
+                        </a>    
+                    </li>
+                </ul>
+                <button type="button" class="button footer-btn">SUPPORT OUR CAUSE</button>                
+            </div>
+            <div class="copyright">
+                <p>&#xa9; 2007-2022 Mathopolis</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

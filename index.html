@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/fonts/fonts.css">
+    <link rel="stylesheet" href="src/normalize.css">
+    <link rel="stylesheet" href="src/custom_properties.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/header/header.css">
+    <link rel="stylesheet" href="src/main/main.css">
+    <link rel="stylesheet" href="src/footer/footer.css">
+    <title>Methapolis</title>
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <a href="./index.html" class="header__logo">
+            <img src="assets/figma/photo/logo_header_mobile.svg" alt="Methapolis logo" class="logo__mobile">
+            <!--depend on media-->
+            <img src="assets/figma/photo/logo_header_desktop.svg" alt="Methapolis logo" class="logo__desktop">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="./grid.html" class="header__menu-link">PUZZLES</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="./form.html" class="header__menu-link">FORM</a>
+                    <button class="header-list-btn"></button>
+                </li>
+                <li class="header__menu-item">
+                    <a href="./demo.html" class="header__menu-link">DEMO</a>
+                    <button class="header-list-btn"></button>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">ABOUT</a>
+                    <button class="header-list-btn"></button>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">STORE</a>
+                </li>
+            </ul>
+        </nav>
+        <button name="donate" class="button btn__donate">DONATE</button>
+        <button type="button" class="mobile__nav__btn"></button> 
+    </header>
+    <!--main-->
+    <main class="main">
+        <section class="volunteers__testimonials">
+            <div class="big__background" aria-hidden="true"></div>
+            <div class="grid volunteers_content">
+                <div class="volunteers">
+                    <h1 class="volunteers__title">VOLUNTEERS</h1>
+                    <h2 class="hidden"></h2>
+                    <p class="volunteers__subtitle">Make magical math momements in your community</p>
+                    <p class="description">
+                        Mathopolis relies on volunteers to help create magical math moments for kids.
+                        We have a number of ways to get involved, from playing math puzzles in a virtual classroom to hosting your own festival. 
+                    </p>
+                </div>
+                <img class="images volunteers__image" alt="Girl with grandma" src="assets/figma/photo/volunteers.svg">
+            </div>
+            <div class="slider">
+                <button class="slider-button btn-left"></button>
+                <div class="testimonials__slider">
+                    <h2 class="testimonials__title">TESTIMONIALS</h2>
+                    <p class="testimonials__text">
+                        I am a biochemist, but I loved helping students explore a logic puzzle 
+                        about a pirate captain and crew (complete with pirate hats).
+                    </p>
+                    <div class="authors">
+                        <p class="author">Dabid H.</p>
+                        <p class="author__decription">Festival volunteer</p>
+                    </div>
+                    <div class="circle-buttons">
+                        <button class="circle-btn__left"></button>
+                        <button class="circle-btn__mid"></button>
+                        <button class="circle-btn__right active"></button>
+                    </div>
+                </div>
+                <button class="slider-button btn-right"></button>
+            </div>
+        </section>
+        <section class="grid lead-an-act">
+            <img class="images lead-an-act__image" src="assets/figma/photo/activity.svg" alt="Chess girl">
+            <div class="content">
+                <h2 class="title">LEAD AN ACTIVITY</h2>
+                <p class="description">
+                    Play a puzzle with kids at a virtual math circle or in-person festival. 
+                    Volunteers lead our puzzles by encouraging independent exploration 
+                    and asking strategic questions to help with deeper thinking.
+                </p>
+                <button type="button" name="ATTEND AN WORKSHOP" class="button">ATTEND AN WORKSHOP</button>
+            </div>
+        </section>
+        <section class="classroom">
+            <div class="classroom__background" aria-disabled="true"></div>
+            <div class="grid">
+                <img class="images classroom__image" src="assets/figma/photo/classroom.svg" alt="Work girl">
+                <div class="content">
+                    <h2 class="title">RUN A CLASSROOM VISIT</h2>
+                    <p class="description">
+                        Lead virtual classroom visits in your neighborhood elementary or middle school. 
+                        We train volunteers (including high school and college students) on how to manage this virtual outreach activity. 
+                        The only thing you need to bring is an open mind and the desire to bring fun math into a kid's life.
+                    </p>
+                    <button type="button" class="button btn-volunteer">VOLUNTEER</button>
+                </div>
+            </div>
+        </section>
+        <section class="grid host">
+            <img class="images host__image" src="assets/figma/photo/host.svg" alt="People">
+            <div class="content">
+                <h2 class="title">HOST A FESTIVAL</h2>
+                <p class="description">
+                    A math festival is a one-time event where children gather and explore math through puzzles. 
+                    Our festivals are hosted by volunteers who want to connect the children in their community with a joyful math experience. 
+                    We have all the resources you need to host a festival. 
+                </p>
+                <button type="button" class="button">LEARN MORE</button>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer"> 
+        <div class="footer__background" aria-disabled="true"></div>
+        <div class="footer__grid">
+            <div class="footer__decription">
+                <a href="index.html" class="img__logo">
+                    <img class="footer__image" src="assets/figma/photo/logo_footer.svg" alt="footer logo">
+                </a>
+                <p class="footer__text">
+                    We're a fiscally-sponsored project of a 501(c)3,
+                    Social and Environmental Entrepreneurs.
+                </p>
+            </div>
+            <div class="footer__links">
+                <ul class="footer__links-nav">
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">STUDENTS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">PARENTS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">TEACHERS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">VOLUNTEERS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="./demo.html" class="footer__link">DEMO</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="./grid.html" class="footer__link">PUZZLES</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">ABOUT</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">NEWS</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="./form.html" class="footer__link">FORM</a>
+                    </li>
+                    <li class="footer__links_item">
+                        <a href="#" class="footer__link">DONATE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <p class="footer__social__decription">
+                    Follow us:
+                </p>
+                <ul class="footer__social__list">
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/linkedin.svg"  alt="linkedin">                                              
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="footer__social__list__item">
+                        <a href="#" class="footer__social__list_link">
+                            <img src="assets/figma/svg/youtube.svg" alt="toytube">
+                        </a>    
+                    </li>
+                </ul>
+                <button type="button" class="button footer-btn">SUPPORT OUR CAUSE</button>                
+            </div>
+            <div class="copyright">
+                <p>&#xa9; 2007-2022 Mathopolis</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

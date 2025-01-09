@@ -1,0 +1,77 @@
+.demo{
+    max-inline-size: 1440px;
+    margin: auto;
+}
+
+.flip{
+    inline-size: clamp(375px, 25vw, 1440px);
+    aspect-ratio: 0.666503906 / 1;
+    margin: 10px auto ;
+}
+
+.flipper{
+    transition: 0.75s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip:hover .flipper{
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    inline-size: clamp(375px, 25vw, 1440px);
+    aspect-ratio: 0.666503906 / 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front{
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-image: url(../../assets/tuz.png);
+}
+
+.back{
+    transform: rotateY(180deg);
+    background-image: url(../../assets/tuz_1.png);
+}
+
+.running__text__subscribe{
+    animation: scroll 30s linear infinite;
+    margin: auto;
+}
+
+.running__socials, .running__text{
+    margin: auto;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.running__social__line{
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+    counter-reset: item;
+    justify-content: space-around;
+    min-inline-size: 100%;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
